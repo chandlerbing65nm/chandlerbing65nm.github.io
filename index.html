@@ -85,13 +85,35 @@ Github: <a href="https://github.com/chandlerbing65nm">chandlerbing65nm</a> <br>
       </li>
    </ul> -->
 
+<style>
+  .publication-block {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .publication-image {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+  }
+  .publication-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .publication-text {
+    flex-grow: 1;
+  }
+</style>
+
 <h2>Publications</h2>
-<div style="display: flex; align-items: flex-start;">
+
+<div class="publication-block">
   <!-- First Publication -->
-  <div style="width: 150px; margin-right: 20px;">
-    <img src="./frequency_masking_paper_figure.png" alt="Frequency Masking for Universal DeepFake Detection" style="width: 100%; height: 150px; object-fit: cover;">
+  <div class="publication-image">
+    <img src="./frequency_masking_paper_figure.png" alt="Frequency Masking for Universal DeepFake Detection">
   </div>
-  <div>
+  <div class="publication-text">
     <strong>Frequency Masking for Universal DeepFake Detection</strong><br>
     <strong>Chandler Timm C. Doloriel</strong>, Ngai-Man Cheung<br>
     Submitted to IEEE International Conference on Acoustics, Speech and Signal Processing
@@ -99,12 +121,12 @@ Github: <a href="https://github.com/chandlerbing65nm">chandlerbing65nm</a> <br>
   </div>
 </div>
 
-<div style="display: flex; align-items: flex-start; margin-top: 20px;">
+<div class="publication-block">
   <!-- Second Publication -->
-  <div style="width: 150px; margin-right: 20px;">
-    <img src="./improving_detection_paper_figure.png" alt="Improving the Detection of Small Oriented Objects in Aerial Images" style="width: 100%; height: 150px; object-fit: cover;">
+  <div class="publication-image">
+    <img src="./improving_detection_paper_figure.png" alt="Improving the Detection of Small Oriented Objects in Aerial Images">
   </div>
-  <div>
+  <div class="publication-text">
     <strong>Improving the Detection of Small Oriented Objects in Aerial Images</strong><br>
     <strong>Chandler Timm C. Doloriel</strong>, Rhandley D. Cajote<br>
     Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision Workshops <strong>(WACVW)</strong>, 2023, <strong>Oral</strong> <br>
