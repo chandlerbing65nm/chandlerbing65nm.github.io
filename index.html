@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Chandler Timm C. Doloriel's Personal Website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Chandler's Personal Website</title>
     <style>
@@ -20,87 +21,110 @@
             margin-top: 20px;
         }
         .contact-info {
-            margin-bottom: 20px;
+            margin-top: 15px;
         }
         .publication, .service-item {
             margin-bottom: 15px;
         }
         .img-container {
-            flex: 0 0 auto;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
         .img-container img {
-            width: 150px;
-            height: 150px;
+            width: 100%;
+            height: auto;
             object-fit: cover;
+            border-radius: 8px;
         }
-        .publication-content, .service-content {
-            flex: 1;
-            min-width: 0;
+        /* Adjustments for smaller screens */
+        @media (max-width: 767.98px) {
+            .left-column, .right-column {
+                width: 100%;
+                max-width: 100%;
+            }
+            .left-column {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header class="text-center mb-4">
-            <h1 class="header-title">Chandler Timm C. Doloriel (He/Him)</h1>
-            <h3 class="text-danger">PhD Research Fellow</h3>
-            <div class="contact-info">
-                <p>
-                    Fakultet for Realfag og Teknologi (REALTEK)<br>
-                    NMBU - Norwegian University of Life Sciences<br>
-                    Ås, Norway<br>
-                    Email: <a href="mailto:chandlertimmdoloriel@gmail.com">chandlertimmdoloriel@gmail.com</a><br>
-                    Github: <a href="https://github.com/chandlerbing65nm">chandlerbing65nm</a><br>
-                    <a href="https://scholar.google.com/citations?hl=en&user=9og9RgcAAAAJ">Google Scholar</a>
-                </p>
-            </div>
-            <img src="./chandlertimm.png" alt="Chandler Timm C. Doloriel" width="240" class="img-fluid">
-        </header>
-
-        <section>
-            <h2 class="section-title">About Me</h2>
-            <p>
-                I am currently researching AI methods to improve the quality of life for aquaculture species. My research includes feeding intensity classification, fish behavior analysis, fish counting and detection, and other related topics that can be enhanced through AI and machine learning.
-            </p>
-            <p>
-                Outside of my research duties, I am passionate about sports and health. I regularly run distances from 5km to 21km and cycle at least once a week.
-            </p>
-        </section>
-
-        <section>
-            <h2 class="section-title">Publications</h2>
-            <div class="d-flex publication">
-               <div class="img-container">
-                   <img src="./frequency_masking_paper_figure.png" alt="Frequency Masking for Universal DeepFake Detection">
-               </div>
-               <div class="publication-content">
-                   <strong><a href="https://ieeexplore.ieee.org/document/10446290" target="_blank">Frequency Masking for Universal DeepFake Detection</a></strong><br>
-                   <strong>Chandler Timm C. Doloriel</strong>, Ngai-Man Cheung<br>
-                   Accepted to IEEE International Conference on Acoustics, Speech and Signal Processing <strong>(ICASSP)</strong>, 2024
-               </div>
-           </div>
-           
-            <div class="d-flex publication">
+        <div class="row">
+            <!-- Left Column: Picture and Contact Details -->
+            <div class="col-md-4 left-column">
                 <div class="img-container">
-                    <img src="./improving_detection_paper_figure.png" alt="Improving the Detection of Small Oriented Objects in Aerial Images">
+                    <img src="./chandlertimm.png" alt="Chandler Timm C. Doloriel" class="img-fluid">
                 </div>
-                <div class="publication-content">
-                  <strong><a href="https://ieeexplore.ieee.org/document/10031101" target="_blank">Improving the Detection of Small Oriented Objects in Aerial Images</a></strong><br>
-                    <strong>Chandler Timm C. Doloriel</strong>, Rhandley D. Cajote<br>
-                    Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision Workshops <strong>(WACVW)</strong>, 2023, <strong>Oral</strong>
+                <div class="contact-info">
+                    <p>
+                        <strong>Chandler Timm C. Doloriel (He/Him)</strong><br>
+                        PhD Research Fellow<br><br>
+                        Fakultet for Realfag og Teknologi (REALTEK)<br>
+                        NMBU - Norwegian University of Life Sciences<br>
+                        Ås, Norway<br><br>
+                        Email: <a href="mailto:chandlertimmdoloriel@gmail.com">chandlertimmdoloriel@gmail.com</a><br>
+                        Github: <a href="https://github.com/chandlerbing65nm" target="_blank">chandlerbing65nm</a><br>
+                        <a href="https://scholar.google.com/citations?hl=en&user=9og9RgcAAAAJ" target="_blank">Google Scholar</a>
+                    </p>
                 </div>
             </div>
-        </section>
+            
+            <!-- Right Column: Main Content -->
+            <div class="col-md-8 right-column">
+                <header class="mb-4">
+                    <h1 class="header-title">Chandler Timm C. Doloriel</h1>
+                </header>
 
-        <section>
-            <h2 class="section-title">Services</h2>
-            <ul>
-                <li class="service-item">Reviewer, ACM Transactions on Multimedia Computing, Communications, and Applications, 2024</li>
-                <li class="service-item">Reviewer, IEEE Transactions on Multimedia, 2024</li>
-                <li class="service-item">Reviewer, IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024</li>
-            </ul>
-        </section>
+                <section>
+                    <h2 class="section-title">About Me</h2>
+                    <p>
+                        I am currently researching AI methods to improve the quality of life for aquaculture species. My research includes feeding intensity classification, fish behavior analysis, fish counting and detection, and other related topics that can be enhanced through AI and machine learning.
+                    </p>
+                    <p>
+                        Outside of my research duties, I am passionate about sports and health. I regularly run distances from 5km to 21km and cycle at least once a week.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="section-title">Publications</h2>
+                    <div class="d-flex publication">
+                       <div class="img-container mr-3" style="flex: 0 0 150px;">
+                           <img src="./frequency_masking_paper_figure.png" alt="Frequency Masking for Universal DeepFake Detection">
+                       </div>
+                       <div class="publication-content">
+                           <strong><a href="https://ieeexplore.ieee.org/document/10446290" target="_blank">Frequency Masking for Universal DeepFake Detection</a></strong><br>
+                           <strong>Chandler Timm C. Doloriel</strong>, Ngai-Man Cheung<br>
+                           Accepted to IEEE International Conference on Acoustics, Speech and Signal Processing <strong>(ICASSP)</strong>, 2024
+                       </div>
+                   </div>
+                   
+                    <div class="d-flex publication">
+                        <div class="img-container mr-3" style="flex: 0 0 150px;">
+                            <img src="./improving_detection_paper_figure.png" alt="Improving the Detection of Small Oriented Objects in Aerial Images">
+                        </div>
+                        <div class="publication-content">
+                          <strong><a href="https://ieeexplore.ieee.org/document/10031101" target="_blank">Improving the Detection of Small Oriented Objects in Aerial Images</a></strong><br>
+                            <strong>Chandler Timm C. Doloriel</strong>, Rhandley D. Cajote<br>
+                            Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision Workshops <strong>(WACVW)</strong>, 2023, <strong>Oral</strong>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="section-title">Services</h2>
+                    <ul>
+                        <li class="service-item">Reviewer, ACM Transactions on Multimedia Computing, Communications, and Applications, 2024</li>
+                        <li class="service-item">Reviewer, IEEE Transactions on Multimedia, 2024</li>
+                        <li class="service-item">Reviewer, IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </div>
+
+    <!-- Optional Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdE1/l46kYaojnz9IB8D6f1HAPu/gUZpC/cVyI4/n4/9juI0jYGJEb+ZkzmAZc" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-1WRVnYy8E+/UAUqs4YzhbqdkVxCh1Ug/OZBWHlv6W8sP0wZefXd5eGzA9nR9PffN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-Piv4xVNRyMGpqkAvjQP/A/zt4/VcYyTv5vzS1xks6OIQwP9IgaD9H8qGTXQ0ZSP" crossorigin="anonymous"></script>
 </body>
 </html>
