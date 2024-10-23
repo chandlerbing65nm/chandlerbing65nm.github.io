@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Chandler Timm C. Doloriel's Personal Website">
@@ -8,47 +9,123 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Chandler's Personal Website</title>
     <style>
+        /* 90s Style Background */
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            background-color: #ffcc00;
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/retro_squares.png');
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #333;
             padding-top: 20px;
         }
+
         .header-title {
-            color: #333;
+            color: #ff0080;
+            font-size: 3em;
+            text-align: center;
+            text-shadow: 2px 2px #0000ff;
         }
+
         .section-title {
-            color: #b57808;
+            color: #008080;
+            font-size: 2.5em;
+            text-shadow: 1px 1px #ff0000;
             margin-top: 20px;
         }
-        .contact-info {
-            margin-top: 15px;
-        }
-        .publication, .service-item {
-            margin-bottom: 15px;
-        }
-        .img-container {
-            margin-bottom: 20px;
-        }
+
+        /* Fun border for images */
         .img-container img {
+            border: 5px solid #00ff00;
+            box-shadow: 0px 0px 10px 2px #ff0000;
             width: 100%;
             height: auto;
             object-fit: cover;
-            border-radius: 8px;
         }
-        /* Adjustments for smaller screens */
+
+        /* Fun button style */
+        a {
+            color: #0000ff;
+            background-color: #ff00ff;
+            border: 2px solid #0000ff;
+            padding: 5px 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #fff;
+            background-color: #0000ff;
+            text-shadow: 1px 1px #ff00ff;
+        }
+
+        /* 90s style buttons */
+        .neon-button {
+            background: linear-gradient(45deg, #ff00ff, #00ff00);
+            padding: 10px;
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            font-size: 1.2em;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+            box-shadow: 3px 3px #ff0000;
+        }
+
+        .neon-button:hover {
+            background: linear-gradient(45deg, #00ff00, #ff00ff);
+            text-shadow: 2px 2px 5px #000;
+            box-shadow: 5px 5px #ff0000;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+            font-size: 1.2em;
+        }
+
+        /* Extra fun for small screens */
         @media (max-width: 767.98px) {
             .left-column, .right-column {
                 width: 100%;
                 max-width: 100%;
             }
+
             .left-column {
                 margin-bottom: 20px;
             }
+
+            .header-title {
+                font-size: 2.5em;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
         }
+
+        /* Animated marquee */
+        .marquee {
+            color: #0000ff;
+            background-color: #ffff00;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+            border: 2px solid #ff00ff;
+            text-align: center;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
     </style>
 </head>
+
 <body>
     <div class="container">
+        <div class="marquee">
+            Welcome to my personal website!
+        </div>
         <div class="row">
             <!-- Left Column: Picture and Contact Details -->
             <div class="col-md-4 left-column">
@@ -62,13 +139,13 @@
                         Fakultet for Realfag og Teknologi (REALTEK)<br>
                         NMBU - Norwegian University of Life Sciences<br>
                         Ås, Norway<br><br>
-                        Email: <a href="mailto:chandlertimmdoloriel@gmail.com">chandlertimmdoloriel@gmail.com</a><br>
-                        Github: <a href="https://github.com/chandlerbing65nm" target="_blank">chandlerbing65nm</a><br>
-                        <a href="https://scholar.google.com/citations?hl=en&user=9og9RgcAAAAJ" target="_blank">Google Scholar</a>
+                        <span>Email: <a href="mailto:chandlertimmdoloriel@gmail.com">chandlertimmdoloriel@gmail.com</a></span><br>
+                        <span>Github: <a href="https://github.com/chandlerbing65nm" target="_blank">chandlerbing65nm</a></span><br>
+                        <span><a href="https://scholar.google.com/citations?hl=en&user=9og9RgcAAAAJ" target="_blank">Google Scholar</a></span>
                     </p>
                 </div>
             </div>
-            
+
             <!-- Right Column: Main Content -->
             <div class="col-md-8 right-column">
                 <header class="mb-4">
@@ -88,22 +165,22 @@
                 <section>
                     <h2 class="section-title">Publications</h2>
                     <div class="d-flex publication">
-                       <div class="img-container mr-3" style="flex: 0 0 150px;">
-                           <img src="./frequency_masking_paper_figure.png" alt="Frequency Masking for Universal DeepFake Detection">
-                       </div>
-                       <div class="publication-content">
-                           <strong><a href="https://ieeexplore.ieee.org/document/10446290" target="_blank">Frequency Masking for Universal DeepFake Detection</a></strong><br>
-                           <strong>Chandler Timm C. Doloriel</strong>, Ngai-Man Cheung<br>
-                           Accepted to IEEE International Conference on Acoustics, Speech and Signal Processing <strong>(ICASSP)</strong>, 2024
-                       </div>
-                   </div>
-                   
+                        <div class="img-container mr-3" style="flex: 0 0 150px;">
+                            <img src="./frequency_masking_paper_figure.png" alt="Frequency Masking for Universal DeepFake Detection">
+                        </div>
+                        <div class="publication-content">
+                            <strong><a href="https://ieeexplore.ieee.org/document/10446290" target="_blank">Frequency Masking for Universal DeepFake Detection</a></strong><br>
+                            <strong>Chandler Timm C. Doloriel</strong>, Ngai-Man Cheung<br>
+                            Accepted to IEEE International Conference on Acoustics, Speech and Signal Processing <strong>(ICASSP)</strong>, 2024
+                        </div>
+                    </div>
+
                     <div class="d-flex publication">
                         <div class="img-container mr-3" style="flex: 0 0 150px;">
                             <img src="./improving_detection_paper_figure.png" alt="Improving the Detection of Small Oriented Objects in Aerial Images">
                         </div>
                         <div class="publication-content">
-                          <strong><a href="https://ieeexplore.ieee.org/document/10031101" target="_blank">Improving the Detection of Small Oriented Objects in Aerial Images</a></strong><br>
+                            <strong><a href="https://ieeexplore.ieee.org/document/10031101" target="_blank">Improving the Detection of Small Oriented Objects in Aerial Images</a></strong><br>
                             <strong>Chandler Timm C. Doloriel</strong>, Rhandley D. Cajote<br>
                             Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision Workshops <strong>(WACVW)</strong>, 2023, <strong>Oral</strong>
                         </div>
@@ -127,4 +204,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-1WRVnYy8E+/UAUqs4YzhbqdkVxCh1Ug/OZBWHlv6W8sP0wZefXd5eGzA9nR9PffN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-Piv4xVNRyMGpqkAvjQP/A/zt4/VcYyTv5vzS1xks6OIQwP9IgaD9H8qGTXQ0ZSP" crossorigin="anonymous"></script>
 </body>
+
 </html>
