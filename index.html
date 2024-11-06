@@ -3,129 +3,100 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Chandler Timm C. Doloriel's Personal Website">
+    <meta name="description" content="Chandler Timm C. Doloriel's Academic Profile">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Chandler's Personal Website</title>
+    <title>Chandler Timm C. Doloriel | Research Fellow</title>
     <style>
-        /* Softer retro-style background */
+        /* Professional, clean background and font */
         body {
-            background-color: #f5e6cc; /* Muted pastel yellow */
-            background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/retro_squares.png');
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
             color: #333;
             padding-top: 20px;
         }
 
         .header-title {
-            color: #ff0080;
-            font-size: 3em;
+            color: #2a2a2a;
+            font-size: 2.5em;
             text-align: center;
-            text-shadow: 2px 2px #0000ff;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
 
         .section-title {
-            color: #008080;
-            font-size: 2.5em;
-            text-shadow: 1px 1px #ff0000;
-            margin-top: 20px;
+            color: #2a2a2a;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-top: 30px;
+            border-bottom: 2px solid #2a2a2a;
+            padding-bottom: 5px;
         }
 
-        /* Fun border for images */
         .img-container img {
-            border: 5px solid #00ff00;
-            box-shadow: 0px 0px 10px 2px #ff0000;
+            border-radius: 5px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             width: 100%;
             height: auto;
-            object-fit: cover;
         }
 
-        /* Fun button style */
         a {
-            color: #0000ff;
-            background-color: #ffb6c1; /* Soft pink for buttons */
-            border: 2px solid #0000ff;
-            padding: 5px 10px;
+            color: #0066cc;
+            font-weight: 500;
             text-decoration: none;
-            font-weight: bold;
         }
 
         a:hover {
-            color: #fff;
-            background-color: #0000ff;
-            text-shadow: 1px 1px #ff00ff;
-        }
-
-        /* 90s style buttons */
-        .neon-button {
-            background: linear-gradient(45deg, #ff00ff, #00ff00);
-            padding: 10px;
-            border: 2px solid #ff0000;
-            border-radius: 10px;
-            font-size: 1.2em;
-            color: #fff;
-            text-shadow: 1px 1px 2px #000;
-            box-shadow: 3px 3px #ff0000;
-        }
-
-        .neon-button:hover {
-            background: linear-gradient(45deg, #00ff00, #ff00ff);
-            text-shadow: 2px 2px 5px #000;
-            box-shadow: 5px 5px #ff0000;
+            color: #004080;
+            text-decoration: underline;
         }
 
         .contact-info {
             margin-top: 15px;
-            font-size: 1.2em;
+            font-size: 1em;
+            color: #555;
         }
 
-        /* Extra fun for small screens */
+        /* Publications */
+        .publication {
+            margin-top: 20px;
+        }
+
+        .publication img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .publication-content {
+            margin-left: 15px;
+        }
+
+        /* Service list */
+        .service-item {
+            font-size: 1em;
+            color: #444;
+        }
+
+        /* Mobile Adjustments */
         @media (max-width: 767.98px) {
             .left-column, .right-column {
                 width: 100%;
                 max-width: 100%;
             }
-
-            .left-column {
-                margin-bottom: 20px;
-            }
-
-            .header-title {
-                font-size: 2.5em;
-            }
-
-            .section-title {
-                font-size: 2em;
-            }
         }
-
-        /* Animated marquee */
-        .marquee {
-            color: #0000ff;
-            background-color: #ffe4b5; /* Softer pastel yellow for marquee */
-            padding: 10px;
-            margin-bottom: 20px;
-            font-size: 1.5em;
-            font-weight: bold;
-            border: 2px solid #ff00ff;
-            text-align: center;
-            animation: marquee 10s linear infinite;
-        }
-
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="marquee">
-            Welcome to Chandler's 90s-themed personal website!
-        </div>
+        <header class="mb-4">
+            <h1 class="header-title">Chandler Timm C. Doloriel</h1>
+            <p class="text-center">PhD Research Fellow at Norwegian University of Life Sciences</p>
+        </header>
+
         <div class="row">
             <!-- Left Column: Picture and Contact Details -->
             <div class="col-md-4 left-column">
@@ -134,9 +105,8 @@
                 </div>
                 <div class="contact-info">
                     <p>
-                        <strong>Chandler Timm C. Doloriel (He/Him)</strong><br>
-                        PhD Research Fellow<br><br>
-                        Fakultet for Realfag og Teknologi (REALTEK)<br>
+                        <strong>Chandler Timm C. Doloriel</strong><br>
+                        PhD Research Fellow<br>
                         NMBU - Norwegian University of Life Sciences<br>
                         Ås, Norway<br><br>
                         <span>Email: <a href="mailto:chandlertimmdoloriel@gmail.com">chandlertimmdoloriel@gmail.com</a></span><br>
@@ -148,41 +118,37 @@
 
             <!-- Right Column: Main Content -->
             <div class="col-md-8 right-column">
-                <header class="mb-4">
-                    <h1 class="header-title">Chandler Timm C. Doloriel</h1>
-                </header>
-
                 <section>
                     <h2 class="section-title">About Me</h2>
                     <p>
-                        My research is about leveraging AI to optimize aquaculture feeding practices through audio processing, to develop advanced underwater vision systems for precise monitoring and analysis, and to deploy lightweight AI models to enhance operational performance and resource management.
+                        My research focuses on leveraging AI to optimize aquaculture feeding practices through audio processing, developing advanced underwater vision systems for precise monitoring and analysis, and deploying lightweight AI models to enhance operational performance and resource management.
                     </p>
                     <p>
-                        Outside of my research duties, my hobbies are martial arts, swimming, and running.
+                        In my free time, I enjoy martial arts, swimming, and running.
                     </p>
                 </section>
 
                 <section>
                     <h2 class="section-title">Publications</h2>
                     <div class="d-flex publication">
-                        <div class="img-container mr-3" style="flex: 0 0 150px;">
+                        <div style="flex: 0 0 100px;">
                             <img src="./frequency_masking_paper_figure.png" alt="Frequency Masking for Universal DeepFake Detection">
                         </div>
                         <div class="publication-content">
                             <strong><a href="https://ieeexplore.ieee.org/document/10446290" target="_blank">Frequency Masking for Universal DeepFake Detection</a></strong><br>
                             <strong>Chandler Timm C. Doloriel</strong>, Ngai-Man Cheung<br>
-                            Accepted to IEEE International Conference on Acoustics, Speech and Signal Processing <strong>(ICASSP)</strong>, 2024
+                            IEEE ICASSP, 2024
                         </div>
                     </div>
 
                     <div class="d-flex publication">
-                        <div class="img-container mr-3" style="flex: 0 0 150px;">
+                        <div style="flex: 0 0 100px;">
                             <img src="./improving_detection_paper_figure.png" alt="Improving the Detection of Small Oriented Objects in Aerial Images">
                         </div>
                         <div class="publication-content">
                             <strong><a href="https://ieeexplore.ieee.org/document/10031101" target="_blank">Improving the Detection of Small Oriented Objects in Aerial Images</a></strong><br>
                             <strong>Chandler Timm C. Doloriel</strong>, Rhandley D. Cajote<br>
-                            Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision Workshops <strong>(WACVW)</strong>, 2023, <strong>Oral</strong>
+                            IEEE/CVF WACVW, 2023
                         </div>
                     </div>
                 </section>
@@ -192,7 +158,7 @@
                     <ul>
                         <li class="service-item">Reviewer, ACM Transactions on Multimedia Computing, Communications, and Applications, 2024</li>
                         <li class="service-item">Reviewer, IEEE Transactions on Multimedia, 2024</li>
-                        <li class="service-item">Reviewer, IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024</li>
+                        <li class="service-item">Reviewer, IEEE ICASSP, 2024</li>
                     </ul>
                 </section>
             </div>
@@ -200,9 +166,9 @@
     </div>
 
     <!-- Optional Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdE1/l46kYaojnz9IB8D6f1HAPu/gUZpC/cVyI4/n4/9juI0jYGJEb+ZkzmAZc" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-1WRVnYy8E+/UAUqs4YzhbqdkVxCh1Ug/OZBWHlv6W8sP0wZefXd5eGzA9nR9PffN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-Piv4xVNRyMGpqkAvjQP/A/zt4/VcYyTv5vzS1xks6OIQwP9IgaD9H8qGTXQ0ZSP" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
