@@ -264,9 +264,20 @@
                     });
                 });
 
-                var defaultButton = document.querySelector('.news-filter-button[data-year="2025"]');
-                if (defaultButton) {
-                    defaultButton.click();
+                var years = [];
+                buttons.forEach(function (button) {
+                    var yearValue = parseInt(button.getAttribute('data-year'), 10);
+                    if (!isNaN(yearValue)) {
+                        years.push(yearValue);
+                    }
+                });
+
+                if (years.length > 0) {
+                    var maxYear = Math.max.apply(null, years);
+                    var defaultButton = document.querySelector('.news-filter-button[data-year="' + maxYear + '"]');
+                    if (defaultButton) {
+                        defaultButton.click();
+                    }
                 }
             });
         </script>
